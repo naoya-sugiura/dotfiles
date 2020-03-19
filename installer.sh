@@ -48,7 +48,7 @@ echo "===== checking if undo directory exists ====="
 UNDO_DIR="$HOME/.vim/.vimundo"
 if ! [ -e "$UNDO_DIR" ]; then
     echo "making undo dir..."
-    mkdir -p "UNDO_DIR"
+    mkdir -p "$UNDO_DIR"
 else
     echo "undo dir already exists"
 fi
