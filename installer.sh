@@ -20,9 +20,11 @@ echo""
 # Convert the installation directory to absolute path
 echo "===== checking if installation directory exists ====="
 INSTALL_DIR="${PLUGIN_DIR}/repos/github.com/Shougo/dein.vim"
-echo "Install to \"$INSTALL_DIR\"..."
-if [ -e "$INSTALL_DIR" ]; then
-    echo "\"$INSTALL_DIR\" already exists"
+if ! [ -e "$INSTALL_DIR" ]; then
+    echo "Install to \"$INSTALL_DIR\"..."
+else
+    echo "\"$INSTALL_DIR\""
+    echo " already exists"
 fi
 echo ""
 
