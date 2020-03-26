@@ -100,11 +100,11 @@ set title
 " 背景色をターミナルと揃える
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
-" カラースキームを反映
+" シンタックスハイライトを有効にする
 syntax on
 " カラースキーム
 colorscheme molokai
-" コードの色分け
+" カラースキームを反映
 set t_Co=256
 " カーソル行の背景色を変える
 augroup vimrc-auto-cursorline
@@ -137,21 +137,21 @@ augroup vimrc-auto-cursorline
     endfunction
 augroup END
 " カーソル行の背景色
-hi CursorLine term=underline ctermbg=237 guibg=#293739
+highlight CursorLine term=underline ctermbg=237 guibg=#293739
 " カーソル行番号の色
-hi CursorLineNr ctermbg=blue ctermfg=white
+highlight CursorLineNr ctermbg=blue ctermfg=white
 " 行番号の色
-hi LineNr ctermfg=110
+highlight LineNr ctermfg=110
 " 矩形選択時の色
-hi Visual ctermbg=31
+highlight Visual ctermbg=31
 " ハイライトの色
-hi Search ctermbg=219
+highlight Search ctermbg=219
 " カーソル位置をウィンドウ端からn行残してスクロール
 set scrolloff=3
 " 行を省略せず表示
 set display=lastline
 " 対応する括弧の強調表示
-hi MatchParen term=standout ctermbg=14 ctermfg=Black guibg=yellow guifg=yellow
+highlight MatchParen term=standout ctermbg=14 ctermfg=Black guibg=yellow guifg=yellow
 " 全角スペースを可視化する
 function! ZenkakuSpace() "{{{
     highlight ZenkakuSpace cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
@@ -168,15 +168,15 @@ endif
 if ! dein#check_install(['vim-gitgutter'])
     "Base
     highlight SignColumn ctermbg = none
-    highlight GitGutterAdd ctermfg = white ctermbg = none
-    highlight GitGutterChange ctermfg = white ctermbg = none
-    highlight GitGutterDelete ctermfg = white ctermbg = none
-    highlight GitGutterChangeDelete ctermfg = white ctermbg = none
-    " highlight SignColumn ctermbg = 111
-    " highlight GitGutterAdd ctermfg = white ctermbg = 62
-    " highlight GitGutterChange ctermfg = white ctermbg = 98
-    " highlight GitGutterDelete ctermfg = white ctermbg = 33
-    " highlight GitGutterChangeDelete ctermfg = white ctermbg = 24
+    highlight GitGutterAdd ctermfg = green ctermbg = none
+    highlight GitGutterChange ctermfg = grey ctermbg = none
+    highlight GitGutterDelete ctermfg = red ctermbg = none
+    highlight GitGutterChangeDelete ctermfg = red ctermbg = none
+    " highlight SignColumn ctermbg = none
+    " highlight GitGutterAdd ctermfg = white ctermbg = none
+    " highlight GitGutterChange ctermfg = white ctermbg = none
+    " highlight GitGutterDelete ctermfg = white ctermbg = none
+    " highlight GitGutterChangeDelete ctermfg = white ctermbg = none
     "Line
     highlight GitGutterAddLine ctermfg = white ctermbg = 5
     highlight GitGutterChangeLine ctermfg = white ctermbg = 35
