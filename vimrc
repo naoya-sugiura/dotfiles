@@ -36,4 +36,6 @@ endif
 call s:source_rc('mappings.rc.vim')
 call s:source_rc('options.rc.vim')
 
+execute 'set runtimepath+=' . "~/dotfiles/after"
+
 set secure
