@@ -34,8 +34,6 @@ cnoremap <C-y>          <C-r>*
 "上下に空行を挿入する
 nnoremap <C-Up> mzO<ESC>`z
 nnoremap <C-Down> mzo<ESC>`z
-" 最後に編集した位置に移動
-nnoremap <C-l> '.
 " ディレクトリ移動
 nnoremap cd :cd %:p:h<CR>:pwd<CR>
 " 移動
@@ -43,6 +41,11 @@ nnoremap j gj
 nnoremap k gk
 nnoremap gj j
 nnoremap gk k
+" タブ移動
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 " 保存，終了
 nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
