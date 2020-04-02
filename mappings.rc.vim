@@ -12,9 +12,11 @@ vnoremap <C-Down> "zx"zp`[V`]
 "---------------------------------------------------------------------------
 " jjで挿入モード解除
 inoremap jj <ESC>
-" 最後に編集した位置に移動
-inoremap <C-l> <Esc>'.<Insert>
-" 補完候補選択
+" カーソルを右に移動
+inoremap <C-l> <Right>
+" カーソルを左に移動
+inoremap <C-h> <Left>
+" カーソルを上下に移動 / 補完候補選択
 inoremap <C-j> <C-Down>
 inoremap <C-k> <C-Up>
 
@@ -46,7 +48,7 @@ nnoremap <Space>w :w<CR>
 nnoremap <Space>q :q<CR>
 nnoremap <Space>x :x<CR>
 nnoremap <Space>wq :wq<CR>
-nnoremap <Space>! :q!<CR>
+nnoremap <Space>1 :q!<CR>
 " 更新
 nnoremap <C-c> :e!<CR>
 " xとsでヤンクしない
