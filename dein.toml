@@ -24,8 +24,8 @@ hook_add = '''
 repo = 'scrooloose/nerdtree'
 hook_add = '''
     nnoremap <silent><C-n> :NERDTreeToggle<CR>
-    nnoremap <silent><C-j> gt
-    nnoremap <silent><C-k> gT
+    nnoremap <silent><S-j> gt
+    nnoremap <silent><S-k> gT
     let NERDTreeBookmarksFile = expand('~/.vim/NERDTreeBookmarks')
 '''
 
