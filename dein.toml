@@ -71,17 +71,6 @@ hook_add = '''
 repo = 'guns/xterm-color-table.vim'
 
 [[plugins]]
-repo = 'neoclide/coc.nvim'
-build = './install.sh nightly'
-hook_add = '''
-    nmap<silent> gd <Plug>(coc-definition)
-    nmap<silent> gy <Plug>(coc-type-definition)
-    nmap<silent> gi <Plug>(coc-implementation)
-    nmap<silent> gr <Plug>(coc-references)
-    nmap<leader> rn <Plug>(coc-rename)
-'''
-
-[[plugins]]
 repo = 'ryanoasis/vim-devicons'
 hook_add = '''
     set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
@@ -116,6 +105,7 @@ repo = 'Yggdroot/indentLine'
 hook_add = '''
     let g:indentLine_faster = 1
     let g:indentLine_color_term = 63
+
 '''
 [[plugins]]
 repo = 'simeji/winresizer'

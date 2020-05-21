@@ -39,7 +39,6 @@ echo ""
 # make plugin dir and fetch dein
 if ! [ -e "$INSTALL_DIR" ]; then
     echo "Begin fetching dein..."
-    mkdir -p "$PLUGIN_DIR"
     git clone https://github.com/Shougo/dein.vim "$INSTALL_DIR"
     echo "Done."
     echo ""
