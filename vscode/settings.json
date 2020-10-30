@@ -43,7 +43,7 @@
     "workbench.colorTheme": "Visual Studio Dark", // カラーテーマ
     "workbench.iconTheme": "seti", // アイコンテーマ
     "terminal.integrated.inheritEnv": false, // Linux用
-    "python.pythonPath": " // pythonのpath
+    "python.pythonPath": "", // pythonのpath
     //Tex
     "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?　、。「」【】『』（）！？てにをはがのともへでや", // 単語の区切り文字
     "latex-workshop.latex.tools": [ // latex tools
@@ -99,7 +99,53 @@
     "latex-workshop.latex.autoBuild.run": false, // 自動でビルドしない
     //vim
     "vim.vimrc.enable": true, //vimrc有効化
-    "vim.vimrc.path": // vimrcのpath
+    "vim.vimrc.path": "",// vimrcのpath
+    //modeごとの色
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        "#161821",
+        "#818596"
+    ],
+    "vim.statusBarColors.insert": [
+        "#84A0C6",
+        "#161821"
+    ],
+    "vim.statusBarColors.visual": [
+        "#B4BE82",
+        "#161821"
+    ],
+    "vim.statusBarColors.visualline": [
+        "#B4BE82",
+        "#161821"
+    ],
+    "vim.statusBarColors.visualblock": [
+        "#B4BE82",
+        "#161821"
+    ],
+    "vim.statusBarColors.replace": [
+        "#E2A478",
+        "#161821"
+    ],
+    "vim.statusBarColors.commandlineinprogress": [
+        "#818596",
+        "#161821"
+    ],
+    "vim.statusBarColors.searchinprogressmode": [
+        "#818596",
+        "#161821"
+    ],
+    "vim.statusBarColors.easymotionmode": [
+        "#818596",
+        "#161821"
+    ],
+    "vim.statusBarColors.easymotioninputmode": [
+        "#818596",
+        "#161821"
+    ],
+    "vim.statusBarColors.surroundinputmode": [
+        "#818596",
+        "#161821"
+    ],
     "vim.insertModeKeyBindings": [ // keybindを変える例
         {
             "before": [
