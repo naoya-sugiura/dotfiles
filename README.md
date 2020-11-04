@@ -10,11 +10,11 @@ $ pip3 install neovim
 
 ## Install dein
 ```
-$ cd ~/dotfiles
+$ cd ~/dotfiles/vim
 $ sh installer.sh
 ```
 
 ## Edit vimrc
 ```
-$ echo "source ~/dotfiles/vimrc" > ~/.vimrc
+$ echo "source ~/dotfiles/vim/vimrc" > ~/.vimrc
 ```

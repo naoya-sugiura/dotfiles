@@ -1,6 +1,6 @@
 " dein configurations.
 
-let s:dein_dir = expand('~/dotfiles/plugins')
+let s:dein_dir = expand('~/dotfiles/vim/plugins')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 " Required:
@@ -10,7 +10,7 @@ execute 'set runtimepath+=' . s:dein_repo_dir
 if dein#load_state(s:dein_dir)
     call dein#begin(s:dein_dir)
 
-    let s:rc_dir    = expand('~/dotfiles')
+    let s:rc_dir    = expand('~/dotfiles/vim')
     let s:toml      = s:rc_dir . '/dein.toml'
     let s:lazy_toml = s:rc_dir . '/deinlazy.toml'
     " Let dein manage dein
