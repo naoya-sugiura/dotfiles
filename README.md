@@ -10,7 +10,7 @@ $ pip3 install neovim
 ```
 $ cd ~/dotfiles/vim
 $ ./setup_dein.sh
-$ ./install_fonts.sh
+$ ./install_font.sh
 ```
 
 ## Edit vimrc
