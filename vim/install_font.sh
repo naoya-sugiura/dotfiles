@@ -12,5 +12,10 @@ curl -fLo "Ubuntu Nerd Font Complete.ttf" https://github.com/ryanoasis/nerd-font
 
 fc-cache -f "$font_dir"
 
+if type "gnome-terminal" > /dev/null 2>&1; then
+    echo "Reload the terminal"
+    gnome-terminal -- bash -c
+fi
+
 echo""
 echo "Finish"
