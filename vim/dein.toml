@@ -8,19 +8,6 @@ repo = 'tomasr/molokai'
 repo = 'LeafCage/foldCC'
 
 [[plugins]]
-repo = 'tomtom/tcomment_vim'
-hook_add = '''
-    if !exists('g:tcomment_types')
-        let g:tcomment_types = {}
-    endif
-    let g:tcomment_types['eruby'] = '<%# %s %>'
-    let g:tcomment_types['erb'] = '<%# %s %>'
-    let g:tcomment_types['scss'] = '/* %s */'
-    let g:tcomment_types['pug'] = '// %s'
-    let g:tcomment_types['toml'] = '# %s'
-'''
-
-[[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
     nnoremap <silent><C-n> :NERDTreeToggle<CR>
@@ -28,9 +15,6 @@ hook_add = '''
     nnoremap <silent><S-k> gT
     let NERDTreeBookmarksFile = expand('~/.vim/NERDTreeBookmarks')
 '''
-
-[[plugins]]
-repo = 'guns/xterm-color-table.vim'
 
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
@@ -96,4 +80,16 @@ hook_add = '''
 repo = 'vim-airline/vim-airline-themes'
 hook_add = '''
     let g:airline_theme = 'deus'
+'''
+
+[[plugins]]
+repo = 'preservim/nerdcommenter'
+hook_add = '''
+    let g:NERDSpaceDelims = 1
+    let g:NERDDefaultAlign = 'left'
+    let g:NERDCommentEmptyLines = 1
+    let g:NERDTrimTrailingWhitespace = 1
+    map gc <plug>NERDCommenterToggle
+    map ga <plug>NERDCommenterAppend
+    map gs <plug>NERDCommenterSexy
 '''
