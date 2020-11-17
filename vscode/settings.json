@@ -44,6 +44,10 @@
     "workbench.iconTheme": "seti", // アイコンテーマ
     "terminal.integrated.inheritEnv": false, // Linux用
     "python.pythonPath": "", // pythonのpath
+    "python.linting.pylintArgs": [ // linter
+        "--generated-members=numpy.* ,torch.*",
+        "--not-callable=torch.*"
+    ],
     //Tex
     "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?　、。「」【】『』（）！？てにをはがのともへでや", // 単語の区切り文字
     "latex-workshop.latex.tools": [ // latex tools
