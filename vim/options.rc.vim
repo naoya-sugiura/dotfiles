@@ -196,3 +196,6 @@ set wildignorecase
 set completeopt=menu,preview,longest
 " タグ補完を消す
 set complete-=t
+" 文字化け対策
+let &t_TI = ""
+let &t_TE = ""
