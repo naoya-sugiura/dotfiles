@@ -57,8 +57,6 @@ nnoremap <C-c> :e!<CR>
 " xとsでヤンクしない
 nnoremap x "_x
 nnoremap s "_s
-" カーソル下の単語をハイライト
-nnoremap <silent> * :let @/="\\<"<CR>"zyiw:let @/.=@z<CR>:let @/.="\\>"<CR>:set hlsearch<CR>
 " エスケープ2回でハイライトを消す
 nnoremap <Esc><Esc> :noh<CR>
 " 削除
@@ -70,3 +68,5 @@ nnoremap <silent> diw "dyiwdiw
 nnoremap <silent> dw "dywdw
 " ノーマルモードでスペースを使う
 nnoremap <Space><Space> i<Space><ESC><Right>
+" ターミナルを画面下部に起動
+nnoremap <C-t> :bo terminal<CR>
