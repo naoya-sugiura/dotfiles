@@ -101,8 +101,8 @@ set viminfo='20,\"1000
 set number
 " タイトルを表示
 set title
-" 背景色をターミナルと揃える
-autocmd ColorScheme * highlight Normal ctermbg=none
+" 背景色を黒にする
+autocmd ColorScheme * highlight Normal ctermbg=16
 autocmd ColorScheme * highlight LineNr ctermbg=none
 " シンタックスハイライトを有効にする
 syntax on
