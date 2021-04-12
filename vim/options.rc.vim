@@ -76,6 +76,8 @@ set ttyfast
 set mouse=a
 " ターミナルのサイズ
 set termwinsize=10x0
+"ファイル拡張子
+autocmd BufNewFile,BufRead *.launch set filetype=xml
 "---------------------------------------------------------------------------
 " ===== 保存 =====
 "
