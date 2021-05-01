@@ -161,5 +161,12 @@
             ]
         }
     ],
-    "vim.hlsearch": true // 検索したときにハイライト
+    "vim.hlsearch": true, // 検索したときにハイライト
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc $fileName -o ../bin/$fileNameWithoutExt && ../bin/$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o ../bin/$fileNameWithoutExt && ../bin/$fileNameWithoutExt",
+        "python": "python3"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.preserveFocus": false
 }
