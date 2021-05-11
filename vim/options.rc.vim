@@ -61,8 +61,7 @@ set nobackup
 set noswapfile
 set backupdir-=.
 " ビープ音を無効化
-set t_vb=
-set novisualbell
+set visualbell t_vb=
 " 前回の編集場所のカーソル位置から開く
 augroup vimrcEx
     au BufRead * if line("'\"") > 0 && line("'\"") <= line("$") |
